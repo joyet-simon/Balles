@@ -14,19 +14,12 @@ namespace Balles
 
         public Balle() : base()
         {
-            tm.Interval = 50;
-            tm.Tick += bouger;
-            tm.Enabled = true;
         }
 
         public Balle(int vitesseX, int vitesseY) : base()
         {
             this.vitesseX = vitesseX;
             this.vitesseY = vitesseY;
-            tm.Interval = 50;
-            tm.Tick += bouger;
-            tm.Enabled = true;
-            
         }
 
         public Int32 vitesseX { get; set; }
@@ -42,6 +35,13 @@ namespace Balles
             this.Left = this.Left + vitesseX;
             this.Top = this.Top + vitesseY;
 
+        }
+
+        public void lancerLaBalle()
+        {
+            tm.Interval = 50;
+            tm.Tick += bouger;
+            tm.Enabled = true;
         }
     }
 }

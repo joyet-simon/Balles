@@ -24,6 +24,13 @@ namespace Balles
             //tm.Enabled = true;
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            balle1.lancerLaBalle();
+            balle2.lancerLaBalle();
+            balle3.lancerLaBalle();
+        }
+
         //private void bouger(Object sender, EventArgs e)
         //{
         //    if (pbBalle.Left < 0) { vitesseX = -vitesseX; }
