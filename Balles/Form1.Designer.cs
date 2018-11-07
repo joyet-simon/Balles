@@ -29,29 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pbBalle = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBalle)).BeginInit();
+            this.balle1 = new Balles.Balle();
+            ((System.ComponentModel.ISupportInitialize)(this.balle1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbBalle
+            // balle1
             // 
-            this.pbBalle.Image = ((System.Drawing.Image)(resources.GetObject("pbBalle.Image")));
-            this.pbBalle.Location = new System.Drawing.Point(371, 106);
-            this.pbBalle.Name = "pbBalle";
-            this.pbBalle.Size = new System.Drawing.Size(100, 100);
-            this.pbBalle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbBalle.TabIndex = 0;
-            this.pbBalle.TabStop = false;
+            this.balle1.Image = ((System.Drawing.Image)(resources.GetObject("balle1.Image")));
+            this.balle1.Location = new System.Drawing.Point(535, 192);
+            this.balle1.Name = "balle1";
+            this.balle1.Size = new System.Drawing.Size(100, 100);
+            this.balle1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.balle1.TabIndex = 0;
+            this.balle1.TabStop = false;
+            this.balle1.vitesseX = 5;
+            this.balle1.vitesseY = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pbBalle);
+            this.Controls.Add(this.balle1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pbBalle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.balle1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,7 +61,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbBalle;
+        private Balle balle1;
     }
 }
 
